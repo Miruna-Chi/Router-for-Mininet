@@ -1,6 +1,6 @@
-Router
+# Router for Mininet
 
-~ Routing table:
+- Routing table:
 
 We start by reading the data from rtable.txt. We then sort it with
 QuickSort that has complexity on average case: O (n * log (n)). Sorting is
@@ -11,6 +11,7 @@ will be done based on the prefix and mask as follows:
 
 Part of a routing table would look like this:
 
+`
 192.168.0.0 192.168.1.2 255.255.255.0 1 43200
 192.168.0.0 192.168.1.2 255.255.255.128 1 43200
 192.168.0.0 192.168.1.2 255.255.255.192 1 43200
@@ -22,6 +23,7 @@ Part of a routing table would look like this:
 192.168.2.0 192.168.3.2 255.255.255.224 3 174272
 192.168.2.0 192.168.3.2 255.255.255.240 3 174272
 192.168.2.0 192.168.2.2 255.255.255.248 2 174272
+`
 
 We are looking for the best_route entry in the table.
 Binary search will return the first entry it finds a match
