@@ -33,7 +33,7 @@ So we have to go through the following entries in the table
 will be the last), until we find an entry that does not fit.
 The one before that will be the best match.
 
-# The actual implementation:
+### The actual implementation
 
 in a while (1), in which we receive packets:
 
